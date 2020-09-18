@@ -30,10 +30,3 @@ jobs:
                 . venv/bin/activate
                 make lint
         
-      
-    
-
-workflows:
-  main:
-    jobs:
-      - build-and-test
