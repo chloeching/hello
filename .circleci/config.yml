@@ -11,6 +11,9 @@ jobs:
       - python/load-cache
       - python/install-deps
       - python/save-cache
+      -run:
+          command: make install
+          name: install
       - run:
           command: make lint
           name: Test
