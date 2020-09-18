@@ -12,12 +12,8 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: |
-            python3 -m venv venv
-            . venv/bin/activate
-            make install
+          command: ./manage.py test
           name: Test
-
 
 workflows:
   main:
